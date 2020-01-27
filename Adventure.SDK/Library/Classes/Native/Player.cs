@@ -9,10 +9,15 @@ namespace Adventure.SDK.Library.Classes.Native
     {
         // Variables/Constants
         public static ForcePlayerAction ChangePlayerAction = Wrapper.Create<ForcePlayerAction>(0x441260);
+        public static LoadSpecialAnimations LoadSpecialPlayerAnimations = Wrapper.Create<LoadSpecialAnimations>(0x422680);
 
         // Delegates
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
         public delegate void ForcePlayerAction(byte playerID, PlayerAction actionID);
+
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        [Function(CallingConventions.Cdecl)]
+        public delegate void LoadSpecialAnimations(Character characterID);
     }
 }

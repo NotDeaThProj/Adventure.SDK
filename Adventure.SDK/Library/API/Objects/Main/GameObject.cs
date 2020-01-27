@@ -41,15 +41,20 @@ namespace Adventure.SDK.Library.API.Objects.Main
 
         public GameObject(byte flags, int index)
         {
-            _mainFunction = new ReverseWrapper<FunctionPointer>((obj) => Main());
-            _displayFunction = new ReverseWrapper<FunctionPointer>((obj) => Display());
-            _deleteFunction = new ReverseWrapper<FunctionPointer>((obj) => Delete());
-            Handle = LoadNativeGameObject(flags, index, _mainFunction.WrapperPointer);
+            Handle = CreateGameObject(flags, index);
         }
 
         public GameObject(byte flags, int index, IntPtr loadSub)
         {
             Handle = LoadNativeGameObject(flags, index, loadSub);
+        }
+
+        public Definitions.Structures.GameObject.GameObject* CreateGameObject(byte flags, int index)
+        {
+            _mainFunction = new ReverseWrapper<FunctionPointer>((obj) => Main());
+            _displayFunction = new ReverseWrapper<FunctionPointer>((obj) => Display());
+            _deleteFunction = new ReverseWrapper<FunctionPointer>((obj) => Delete());
+            return LoadNativeGameObject(flags, index, _mainFunction.WrapperPointer);
         }
 
         // Methods

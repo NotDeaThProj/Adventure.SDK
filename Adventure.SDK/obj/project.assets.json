@@ -293,7 +293,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "0.0.4",
+    "version": "0.0.5",
     "restore": {
       "projectUniqueName": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
       "projectName": "Adventure.SDK",
