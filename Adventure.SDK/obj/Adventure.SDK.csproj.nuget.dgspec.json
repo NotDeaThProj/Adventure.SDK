@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj": {}
+    "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj": {
-      "version": "1.0.0",
+    "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj": {
+      "version": "0.0.4",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
+        "projectUniqueName": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
         "projectName": "Adventure.SDK",
-        "projectPath": "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
+        "projectPath": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
         "packagesPath": "C:\\Users\\DeaTh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\obj\\",
+        "outputPath": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\DeaTh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Reloaded.Hooks": {
+              "target": "Package",
+              "version": "[2.3.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,9 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Adventure.SDK.Library.Definitions.Enums
+﻿namespace Adventure.SDK.Library.Definitions.Enums
 {
+    public enum PlayerAction : byte
+    {
+        Nothing,
+        RunningOnWindPath,
+        Unknown1,
+        VerticalSpring,
+        Spring,
+        Launched,
+        TrampolineBounce1,
+        TrampolineBounce2,
+        TrampolineBounce3,
+        SomethingTrampolineRelated,
+        SomethingTrampolineRelated2,
+        FloatingOnAirCurrent,
+        ObjectControl,
+        ObjectControlWithSpin,
+        RunningInAir,
+        PushingInAir,
+        Helicopter,
+        FallingWithoutFalling,
+        BumperCar,
+        Victory,
+        GrabbingRocket,
+        HorizontalRocket,
+        VerticalRocket,
+        Waterslide,
+        ReturnToNormal,
+        Bowling,
+        Loop,
+        Unknown2,
+        ExitBumperCar,
+        MonkeyBars,
+        HangingOnIcicle,
+        Ladder,
+        ClingingToCylinderInSkyDeck,
+        TrappedInFinalEggRobot,
+        LookAround,
+        HitSomething,
+        BreatheBubble,
+        Unknown3,
+        Frozen,
+        Drown,
+        Shower,
+        Unknown4,
+        ShakeOffGarbage,
+        RunDownBuilding,
+        Snowboard,
+        PinballMode,
+        SuperSonic,
+        UnsuperSonic,
+        MakesTailsStartFlying,
+        TailsCharacterSelectPose,
+        Die
+    }
+
     public enum Status : ushort
     {
         OnGround       = 0x1,
@@ -24,7 +75,7 @@ namespace Adventure.SDK.Library.Definitions.Enums
         Unknown6       = 0x8000
     }
 
-    public enum Powerups : ushort
+    public enum Powerup : ushort
     {
         Shield         = 0x1,
         ElectricShield = 0x2,
@@ -44,7 +95,7 @@ namespace Adventure.SDK.Library.Definitions.Enums
         Invincibility  = 0x8000,
     }
 
-    public enum Upgrades : ushort
+    public enum Upgrade : ushort
     {
         /// <summary>
         /// List of upgrades for Sonic in Sonic Adventure
@@ -89,7 +140,7 @@ namespace Adventure.SDK.Library.Definitions.Enums
         SuperSonic = 0x8000
     }
 
-    public enum Characters : byte
+    public enum Character : byte
     {
         Sonic,
         Eggman,

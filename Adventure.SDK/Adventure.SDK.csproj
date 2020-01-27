@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.4</Version>
+    <Authors>ĐeäTh</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Reloaded.Hooks" Version="2.3.4" />
+  </ItemGroup>
 
 </Project>
