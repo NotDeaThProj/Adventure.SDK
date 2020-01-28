@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using Adventure.SDK.Library.Definitions.Enums;
 using Reloaded.Hooks.X86;
 using static Adventure.SDK.Library.Classes.Native.GameObject;
@@ -28,13 +29,18 @@ namespace Adventure.SDK.Library.API.Objects.Main
             get => Info->CharacterID;
             set => Info->CharacterID = value;
         }
+        public Vector3 Position
+        {
+            get => Info->Position;
+            set => Info->Position = value;
+        }
 
         // Constructors
         /// <summary>
         /// Gets the player object
         /// </summary>
         /// <param name="playerID"></param>
-        public GameObject(byte playerID)
+        public GameObject(Players playerID)
         {
             Handle = GetCharacterGameObject(playerID);
         }

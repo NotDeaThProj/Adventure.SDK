@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using Adventure.SDK.Library.Definitions.Enums;
 using Reloaded.Hooks.Definitions.X86;
 using Reloaded.Hooks.X86;
 
@@ -18,7 +19,7 @@ namespace Adventure.SDK.Library.Classes.Native
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
-        public unsafe delegate Definitions.Structures.GameObject.GameObject* GetCharacterObject(byte playerID);
+        public unsafe delegate Definitions.Structures.GameObject.GameObject* GetCharacterObject(Players playerID);
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
