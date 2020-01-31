@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Numerics;
-using Adventure.SDK.Library.Definitions.Enums;
 using Reloaded.Hooks.X86;
 using static Adventure.SDK.Library.Classes.Native.GameObject;
-using static Adventure.SDK.Library.Classes.Native.Player;
 
 namespace Adventure.SDK.Library.API.Objects.Main
 {
@@ -19,16 +17,6 @@ namespace Adventure.SDK.Library.API.Objects.Main
         public Definitions.Structures.GameObject.Info* Info => Handle->Info;
         public Definitions.Structures.GameObject.ActorData* ActorData => Handle->ActorData;
         public Definitions.Structures.GameObject.CharacterData* CharacterData => Handle->ActorData->CharacterData;
-        public PlayerAction NextAction
-        {
-            get => Info->NextAction;
-            set => ChangePlayerAction(Players.P1, value);
-        }
-        public Character CharacterID
-        {
-            get => Info->CharacterID;
-            set => Info->CharacterID = value;
-        }
         public Vector3 Position
         {
             get => Info->Position;
@@ -36,15 +24,7 @@ namespace Adventure.SDK.Library.API.Objects.Main
         }
 
         // Constructors
-        /// <summary>
-        /// Gets the player object
-        /// </summary>
-        /// <param name="playerID"></param>
-        public GameObject(Players playerID)
-        {
-            Handle = GetCharacterGameObject(playerID);
-        }
-
+        public GameObject() { }
         public GameObject(byte flags, int index)
         {
             Handle = CreateGameObject(flags, index);
