@@ -22,7 +22,7 @@ namespace Adventure.SDK.Library.API.Objects.Main
         public PlayerAction NextAction
         {
             get => Info->NextAction;
-            set => ChangePlayerAction(0, value);
+            set => ChangePlayerAction(Players.P1, value);
         }
         public Character CharacterID
         {

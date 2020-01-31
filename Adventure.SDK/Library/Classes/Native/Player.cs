@@ -14,7 +14,7 @@ namespace Adventure.SDK.Library.Classes.Native
         // Delegates
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
-        public delegate void ForcePlayerAction(byte playerID, PlayerAction actionID);
+        public delegate void ForcePlayerAction(Players playerID, PlayerAction actionID);
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]

@@ -8,7 +8,7 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
     {
         public GameObject* Next, Previous, Parent, Child;
         public IntPtr mainSub, displaySub, deleteSub;
-        public IntPtr SETData;
+        public SETDataUnion SETData;
         public Info* Info;
         public ActorData* ActorData;
         public void* UnknownA_ptr, UnknownB_ptr;
