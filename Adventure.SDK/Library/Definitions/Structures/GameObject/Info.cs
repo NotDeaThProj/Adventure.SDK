@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using Adventure.SDK.Numerics;
 using Adventure.SDK.Library.Definitions.Enums;
 
 namespace Adventure.SDK.Library.Definitions.Structures.GameObject
@@ -16,7 +17,7 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
         public short field_a;
         public IntPtr Object;
         public void* LoopData;
-        public fixed int Rotation[3];
+        public Rotation3 Rotation;
         public Vector3 Position;
         public Vector3 Properties;
         public void* CollisionInfo, field_3C;

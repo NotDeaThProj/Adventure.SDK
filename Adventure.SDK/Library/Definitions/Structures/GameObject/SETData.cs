@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Numerics;
+﻿using System.Numerics;
 using System.Runtime.InteropServices;
-using System.Text;
+using Adventure.SDK.Numerics;
 
 namespace Adventure.SDK.Library.Definitions.Structures.GameObject
 {
@@ -23,10 +21,10 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
         public float Distance;
     }
 
-    public unsafe struct SETEntry
+    public struct SETEntry
     {
         public short ObjectType;
-        public fixed ushort Rotation[3];
+        public SETRotation3 Rotation;
         public Vector3 Position, Properties;
     }
 }
