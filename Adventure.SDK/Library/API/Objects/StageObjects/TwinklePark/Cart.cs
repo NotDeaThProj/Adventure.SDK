@@ -1,7 +1,7 @@
 ﻿using System;
 using Adventure.SDK.Library.API.Objects.Main;
 
-namespace Adventure.SDK.Library.API.Objects
+namespace Adventure.SDK.Library.API.Objects.StageObjects.TwinklePark
 {
     public unsafe class Cart : GameObject
     {
@@ -24,8 +24,10 @@ namespace Adventure.SDK.Library.API.Objects
             set => Info->Properties.Z = (byte)value;
         }
 
+        public static IntPtr MainFunction { get; } = (IntPtr)0x79A9E0;
+
         // Constructors
-        public Cart() : base(15, 3, (IntPtr)0x79A9E0) { }
+        public Cart() : base(15, 3, MainFunction) { }
 
         // Enums
         public enum CartColor : byte
@@ -44,6 +46,15 @@ namespace Adventure.SDK.Library.API.Objects
             Normal,
             Wide,
             Long
+        }
+
+        public enum CartAction : byte
+        {
+            Unknown1,
+            Unknown2,
+            Unknown3,
+            Unknown4,
+            OccupiedByPlayer,
         }
     }
 }
