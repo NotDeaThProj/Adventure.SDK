@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Adventure.SDK.Library.Definitions.Enums;
 using Reloaded.Hooks.Definitions.X86;
 using Reloaded.Hooks.X86;
 
@@ -23,6 +22,6 @@ namespace Adventure.SDK.Library.Classes.Native
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
-        public unsafe delegate void FunctionPointer(Definitions.Structures.GameObject.GameObject* functionAddress);
+        public unsafe delegate void FunctionPointer(IntPtr functionAddress);
     }
 }

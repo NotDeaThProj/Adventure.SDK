@@ -78,4 +78,37 @@
 
         Credits = 22,
     }
+
+    public enum GameState : byte
+    {
+        ResetLevelBadTexture,
+        ClearScreen,
+        Crash,
+        ClearScreen2,
+        ShowLevel,
+        LoadAdventureField,
+        Die,
+        Restart,
+        Crash2,
+        Transition,
+        ClearScreen3,
+        Restart2,
+
+        /// <summary>
+        /// Restarts the current act of the level.
+        /// </summary>
+        RestartLevelAct,
+        Crash3,
+        Credits,
+        Normal,
+        Paused,
+        LoadLevel,
+        Crash4,
+        ReturnToTitle,
+        ReturnToTitle2,
+        LoadingScreenBadTexture,
+        RestartLevelBadTexture2,
+        ReturnToTitle3,
+        LoadLevel2
+    }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using Adventure.SDK.Library.API.Objects.Main;
+using Adventure.SDK.Library.Definitions.Enums.Objects;
 
 namespace Adventure.SDK.Library.API.Objects.StageObjects.TwinklePark
 {
@@ -28,33 +29,5 @@ namespace Adventure.SDK.Library.API.Objects.StageObjects.TwinklePark
 
         // Constructors
         public Cart() : base(15, 3, MainFunction) { }
-
-        // Enums
-        public enum CartColor : byte
-        {
-            Black,
-            Blue,
-            Green,
-            Lightblue,
-            Orange,
-            Pink,
-            Red
-        }
-
-        public enum CartSize : byte
-        {
-            Normal,
-            Wide,
-            Long
-        }
-
-        public enum CartAction : byte
-        {
-            Unknown1,
-            Unknown2,
-            Unknown3,
-            Unknown4,
-            OccupiedByPlayer,
-        }
     }
 }

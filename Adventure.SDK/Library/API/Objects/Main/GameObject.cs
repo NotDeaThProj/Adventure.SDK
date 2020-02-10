@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Numerics;
-using Reloaded.Hooks.X86;
 using static Adventure.SDK.Library.Classes.Native.GameObject;
 
 namespace Adventure.SDK.Library.API.Objects.Main
@@ -29,17 +28,17 @@ namespace Adventure.SDK.Library.API.Objects.Main
         // Methods
         public virtual void Main()
         {
-            Handle->MainSub(Handle);
+            Handle->MainSub((IntPtr)Handle);
         }
 
         public virtual void Display()
         {
-            Handle->DisplaySub(Handle);
+            Handle->DisplaySub((IntPtr)Handle);
         }
 
         public virtual void Delete()
         {
-            Handle->DeleteSub(Handle);
+            Handle->DeleteSub((IntPtr)Handle);
         }
     }
 }

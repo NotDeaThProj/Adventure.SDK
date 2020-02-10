@@ -2,131 +2,97 @@
 {
     public enum Stage : int
     {
-        /// <summary>
-        /// Hedgehog Hammer Stage IDs
-        /// </summary>
+        // Hedgehog Hammer Stage IDs
         HedgehogHammer = 0,
 
-        /// <summary>
-        /// Emerald Coast Stage IDs
-        /// </summary>
+        // Emerald Coast Stage IDs
         EmeraldCoast = 1,
         EmeraldCoastOne = EmeraldCoast << 8,
         EmeraldCoastTwo,
         EmeraldCoastThree,
 
-        /// <summary>
-        /// Windy Valley Stage IDs
-        /// </summary>
+        // Windy Valley Stage IDs
         WindyValley = 2,
         WindyValleyOne = WindyValley << 8,
         WindyValleyTwo,
         WindyValleyThree,
 
-        /// <summary>
-        /// Twinkle Park Stage IDs
-        /// </summary>
+        // Twinkle Park Stage IDs
         TwinklePark = 3,
         TwinkleParkOne = TwinklePark << 8,
         TwinkleParkTwo,
         TwinkleParkThree,
 
-        /// <summary>
-        /// Speed Highway Stage IDs
-        /// </summary>
+        // Speed Highway Stage IDs
         SpeedHighway = 4,
         SpeedHighwayOne = SpeedHighway << 8,
         SpeedHighwayTwo,
         SpeedHighwayThree,
 
-        /// <summary>
-        /// Red Mountain Stage IDs
-        /// </summary>
+        // Red Mountain Stage IDs
         RedMountain = 5,
         RedMountainOne = RedMountain << 8,
         RedMountainTwo,
 
-        /// <summary>
-        /// Sky Deck Stage IDs
-        /// </summary>
+        // Sky Deck Stage IDs
         SkyDeck = 6,
         SkyDeckOne = SkyDeck << 8,
         SkyDeckTwo,
         SkyDeckThree,
 
-        /// <summary>
-        /// Lost World Stage IDs
-        /// </summary>
+        // Lost World Stage IDs
         LostWorld = 7,
         LostWorldOne = LostWorld << 8,
         LostWorldTwo,
         LostWorldThree,
 
-        /// <summary>
-        /// Ice Cap Stage IDs
-        /// </summary>
+        // Ice Cap Stage IDs
         IceCap = 8,
         IceCapOne = IceCap << 8,
         IceCapTwo,
         IceCapThree,
         IceCapFour,
 
-        /// <summary>
-        /// Casinopolis Stage IDs
-        /// </summary>
+        // Casinopolis Stage IDs
         Casinopolis = 9,
         CasinopolisOne = Casinopolis << 8,
         CasinopolisTwo,
         CasinopolisThree,
         CasinopolisFour,
 
-        /// <summary>
-        /// Final Egg Stage IDs
-        /// </summary>
+        // Final Egg Stage IDs
         FinalEgg = 10,
         FinalEggOne = FinalEgg << 8,
         FinalEggTwo,
         FinalEggThree,
 
-        /// <summary>
-        /// Hot Shelter Stage IDs
-        /// </summary>
+        // Hot Shelter Stage IDs
         HotShelter = 11,
         HotShelterOne = HotShelter << 8,
         HotShelterTwo,
         HotShelterThree,
         HotShelterFour,
 
-        /// <summary>
-        /// Chaos Boss Fight Stage IDs
-        /// </summary>
+        // Chaos Boss Fight Stage IDs
         ChaosZero  = 14,
         ChaosTwo,
         ChaosFour,
         ChaosSix,
         ChaosSeven,
 
-        /// <summary>
-        /// Eggman Boss Fight Stage IDs
-        /// </summary>
+        // Eggman Boss Fight Stage IDs
         EggHornet = 19,
         EggWalker,
         EggViper,
 
-        /// <summary>
-        /// Zero Boss Fight Stage ID
-        /// </summary>
+        // Zero Boss Fight Stage ID
         Zero = 22,
 
-        /// <summary>
-        /// Beta Boss Fight Stage IDs
-        /// </summary>
+        // Beta Boss Fight Stage IDs
         Beta     = 23,
         BetaMKII,
         
-        /// <summary>
-        /// Station Square Stage IDs
-        /// </summary>
+        // Station Square Stage IDs
         StationSquare = 25,
         StationSquareOne = StationSquare << 8,
         StationSquareTwo,
@@ -135,9 +101,7 @@
         StationSquareFive,
         StationSquareSix,
 
-        /// <summary>
-        /// Egg Carrier Outside Stage IDs
-        /// </summary>
+        // Egg Carrier Outside Stage IDs
         EggCarrierOutside = 29,
         EggCarrierOutsideOne = EggCarrierOutside << 8,
         EggCarrierOutsideTwo,
@@ -147,9 +111,7 @@
         EggCarrierOutsideSix,
         EggCarrierOutsideSeven,
 
-        /// <summary>
-        /// Egg Carrier Inside Stage IDs
-        /// </summary>
+        // Egg Carrier Inside Stage IDs
         EggCarrierInside = 32,
         EggCarrierInsideOne = EggCarrierInside << 8,
         EggCarrierInsideTwo,
@@ -158,26 +120,20 @@
         EggCarrierInsideFive,
         EggCarrierInsideSix,
 
-        /// <summary>
-        /// Mystic Ruins Stage IDs
-        /// </summary>
+        // Mystic Ruins Stage IDs
         MysticRuins = 33,
         MysticRuinsOne = MysticRuins << 8,
         MysticRuinsTwo,
         MysticRuinsThree,
         MysticRuinsFour,
 
-        /// <summary>
-        /// Past Mystic Ruins Stage IDs
-        /// </summary>
+        // Past Mystic Ruins Stage IDs
         Past = 34,
         PastOne = Past << 8,
         PastTwo,
         PastThree,
 
-        /// <summary>
-        /// Twinkle Circuit Stage IDs
-        /// </summary>
+        // Twinkle Circuit Stage IDs
         TwinkleCircuit = 35,
         TwinkleCircuitOne = TwinkleCircuit << 8,
         TwinkleCircuitTwo,
@@ -186,32 +142,22 @@
         TwinkleCircuitFive,
         TwinkleCircuitSix,
 
-        /// <summary>
-        /// Sky Chase Stage IDs
-        /// </summary>
+        // Sky Chase Stage IDs
         SkyChaseOne = 36,
         SkyChaseTwo,
 
-        /// <summary>
-        /// Sand Hill Stage ID
-        /// </summary>
+        // Sand Hill Stage ID
         SandHill = 38,
 
-        /// <summary>
-        /// Chao Garden Stage IDs
-        /// </summary>
+        // Chao Garden Stage IDs
         StationSquareChaoGarden = 39,
         EggCarrierChaoGarden,
         MysticRuinsChaoGaren,
 
-        /// <summary>
-        /// Chao Race Stage ID
-        /// </summary>
+        // Chao Race Stage ID
         ChaoRace = 42,
 
-        /// <summary>
-        /// Invalid Stage ID
-        /// </summary>
+        // Invalid Stage ID
         Invalid = 43,
     }
 }
