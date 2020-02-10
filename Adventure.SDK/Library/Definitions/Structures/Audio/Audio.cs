@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using Adventure.SDK.Library.Definitions.Enums;
 using Reloaded.Hooks.X86;
 using Reloaded.Hooks.Definitions.X86;
-using Adventure.SDK.Library.Definitions.Enums;
 
 namespace Adventure.SDK.Library.Definitions.Structures.Audio
 {

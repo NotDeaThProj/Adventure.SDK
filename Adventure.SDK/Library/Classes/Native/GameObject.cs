@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Reloaded.Hooks.Definitions.X86;
 using Reloaded.Hooks.X86;
+using Reloaded.Hooks.Definitions.X86;
 
 namespace Adventure.SDK.Library.Classes.Native
 {

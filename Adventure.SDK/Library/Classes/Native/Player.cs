@@ -16,6 +16,7 @@ namespace Adventure.SDK.Library.Classes.Native
         public static GetRingCount GetRings = Wrapper.Create<GetRingCount>(0x425CC0);
         public static GetLifeCount GetLives = Wrapper.Create<GetLifeCount>(0x425FE0);
         public static HurtPlayerCharacter HurtPlayer = Wrapper.Create<HurtPlayerCharacter>(0x4506F0);
+        public static GiveSpeedUpPowerup GiveSpeedUp = Wrapper.Create<GiveSpeedUpPowerup>(0x441DF0);
 
         // Delegates
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -49,5 +50,9 @@ namespace Adventure.SDK.Library.Classes.Native
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
         public delegate void HurtPlayerCharacter(Players playerID);
+
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        [Function(CallingConventions.Cdecl)]
+        public delegate void GiveSpeedUpPowerup(Players playerID);
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Adventure.SDK.Library.Definitions.Enums
+﻿namespace Adventure.SDK.Library.Definitions.Enums
 {
     public enum Language : byte
     {

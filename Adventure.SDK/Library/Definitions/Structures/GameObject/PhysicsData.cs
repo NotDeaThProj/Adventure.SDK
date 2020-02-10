@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Adventure.SDK.Library.Definitions.Structures.GameObject
+﻿namespace Adventure.SDK.Library.Definitions.Structures.GameObject
 {
     public struct PhysicsData
     {

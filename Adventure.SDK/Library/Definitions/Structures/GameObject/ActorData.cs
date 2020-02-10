@@ -1,5 +1,5 @@
-﻿using Adventure.SDK.Numerics;
-using System.Numerics;
+﻿using System.Numerics;
+using Adventure.SDK.Numerics;
 
 namespace Adventure.SDK.Library.Definitions.Structures.GameObject
 {
