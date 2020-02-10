@@ -7,11 +7,6 @@ namespace Adventure.SDK.Library.API.Objects.Main
 {
     public unsafe class GameObject
     {
-        // Variables/Constants
-        private ReverseWrapper<FunctionPointer> _mainFunction;
-        private ReverseWrapper<FunctionPointer> _displayFunction;
-        private ReverseWrapper<FunctionPointer> _deleteFunction;
-
         // Properties
         public Definitions.Structures.GameObject.GameObject* Handle { get; set; }
         public Definitions.Structures.GameObject.Info* Info => Handle->Info;
@@ -25,22 +20,10 @@ namespace Adventure.SDK.Library.API.Objects.Main
 
         // Constructors
         public GameObject() { }
-        public GameObject(byte flags, int index)
-        {
-            Handle = CreateGameObject(flags, index);
-        }
 
         public GameObject(byte flags, int index, IntPtr loadSub)
         {
             Handle = LoadNativeGameObject(flags, index, loadSub);
-        }
-
-        public Definitions.Structures.GameObject.GameObject* CreateGameObject(byte flags, int index)
-        {
-            _mainFunction = new ReverseWrapper<FunctionPointer>((obj) => Main());
-            _displayFunction = new ReverseWrapper<FunctionPointer>((obj) => Display());
-            _deleteFunction = new ReverseWrapper<FunctionPointer>((obj) => Delete());
-            return LoadNativeGameObject(flags, index, _mainFunction.WrapperPointer);
         }
 
         // Methods
