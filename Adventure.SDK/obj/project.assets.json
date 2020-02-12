@@ -289,21 +289,19 @@
   },
   "packageFolders": {
     "C:\\Users\\DeaTh\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "0.2.9.1",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
+      "projectUniqueName": "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
       "projectName": "Adventure.SDK",
-      "projectPath": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
+      "projectPath": "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\Adventure.SDK.csproj",
       "packagesPath": "C:\\Users\\DeaTh\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\Adventure.SDK\\Adventure.SDK\\obj\\",
+      "outputPath": "C:\\Users\\DeaTh\\source\\repos\\Adventure.SDK\\Adventure.SDK\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\DeaTh\\AppData\\Roaming\\NuGet\\NuGet.Config",

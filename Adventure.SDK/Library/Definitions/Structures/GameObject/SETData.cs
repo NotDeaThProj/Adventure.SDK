@@ -10,7 +10,7 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
         [FieldOffset(0)]
         public SETObjectData* SETData;
         [FieldOffset(0)]
-        public void* MissionSETData;
+        public MissionSETObjectData* MissionSETData;
     }
     public unsafe struct SETObjectData
     {
@@ -19,6 +19,11 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
         public GameObject* ObjectInstance;
         public SETEntry* SETEntry;
         public float Distance;
+    }
+    public unsafe struct MissionSETObjectData
+    {
+        public SETObjectData SETData;
+        public void* PRMEntry;
     }
 
     public struct SETEntry
