@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using Reloaded.Hooks.X86;
 using Reloaded.Hooks.Definitions.X86;
+using Adventure.SDK.Library.Definitions.Enums.Objects;
 
 namespace Adventure.SDK.Library.Classes.Native
 {
@@ -14,7 +15,7 @@ namespace Adventure.SDK.Library.Classes.Native
         // Delegates
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]
-        public unsafe delegate Definitions.Structures.GameObject.GameObject* LoadGameObject(byte flags, int index, IntPtr loadSub);
+        public unsafe delegate Definitions.Structures.GameObject.GameObject* LoadGameObject(ObjectInitilizationFlag initilizationFlag, int index, IntPtr loadSub);
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         [Function(CallingConventions.Cdecl)]

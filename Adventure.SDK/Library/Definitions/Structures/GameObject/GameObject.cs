@@ -7,18 +7,18 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
     public unsafe struct GameObject
     {
         public GameObject* Next, Previous, Parent, Child;
-        public IntPtr mainSub, displaySub, deleteSub;
-        public SETDataUnion SETData;
-        public Info* Info;
-        public ActorData* ActorData;
+        public IntPtr executor, displayer, destructor;
+        public GameObjectSETDataUnion SETData;
+        public GameObjectInfo* Info;
+        public GameObjectActorData* ActorData;
         public void* UnknownA_ptr, UnknownB_ptr;
         public int field_30;
 
-        public FunctionPointer MainSub =>
-          Marshal.GetDelegateForFunctionPointer<FunctionPointer>(mainSub);
-        public FunctionPointer DisplaySub =>
-          Marshal.GetDelegateForFunctionPointer<FunctionPointer>(displaySub);
-        public FunctionPointer DeleteSub =>
-          Marshal.GetDelegateForFunctionPointer<FunctionPointer>(deleteSub);
+        public FunctionPointer Executor =>
+          Marshal.GetDelegateForFunctionPointer<FunctionPointer>(executor);
+        public FunctionPointer Displayer =>
+          Marshal.GetDelegateForFunctionPointer<FunctionPointer>(displayer);
+        public FunctionPointer Destructor =>
+          Marshal.GetDelegateForFunctionPointer<FunctionPointer>(destructor);
     }
 }

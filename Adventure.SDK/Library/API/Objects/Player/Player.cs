@@ -11,13 +11,13 @@ namespace Adventure.SDK.Library.API.Objects.Player
         public Players PlayerID { get; }
         public PlayerAction NextAction
         {
-            get => Info->NextAction;
+            get => Handle->Info->NextAction;
             set => ChangePlayerAction(PlayerID, value);
         }
         public Character CharacterID
         {
-            get => Info->CharacterID;
-            set => Info->CharacterID = value;
+            get => Handle->Info->CharacterID;
+            set => Handle->Info->CharacterID = value;
         }
         public bool IsControllerEnabled => IsGameControllerEnabled(PlayerID);
         public short Rings
