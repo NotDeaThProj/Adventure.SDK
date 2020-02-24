@@ -8,9 +8,9 @@ namespace Adventure.SDK.Library.Definitions.Structures.GameObject
     {
         public GameObject* Next, Previous, Parent, Child;
         public IntPtr executor, displayer, destructor;
-        public GameObjectSETDataUnion SETData;
-        public GameObjectInfo* Info;
-        public GameObjectActorData* ActorData;
+        public SETDataUnion SETData;
+        public Info* Info;
+        public ActorData* ActorData;
         public void* UnknownA_ptr, UnknownB_ptr;
         public int field_30;
 

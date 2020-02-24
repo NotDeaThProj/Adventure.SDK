@@ -1,14 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.3.2.9</Version>
+    <Version>0.3.6</Version>
     <Authors>ĐeäTh</Authors>
+    <Description>Experimental C# Nuget Package for making modifications to Sonic Adventure DX (PC, 2004).</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ninja.SDK" Version="1.0.1" />
     <PackageReference Include="Reloaded.Hooks" Version="2.3.4" />
   </ItemGroup>
 

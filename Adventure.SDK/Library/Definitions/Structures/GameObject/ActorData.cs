@@ -3,7 +3,7 @@ using Adventure.SDK.Numerics;
 
 namespace Adventure.SDK.Library.Definitions.Structures.GameObject
 {
-    public unsafe struct GameObjectActorData
+    public unsafe struct ActorData
     {
         public CharacterData* CharacterData;
         public Vector3 VelocityDirection, SomeCollisionVector;

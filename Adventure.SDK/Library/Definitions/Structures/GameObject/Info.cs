@@ -5,7 +5,7 @@ using Adventure.SDK.Library.Definitions.Enums;
 
 namespace Adventure.SDK.Library.Definitions.Structures.GameObject
 {
-    public unsafe struct GameObjectInfo
+    public unsafe struct Info
     {
         public byte Action;
         public PlayerAction NextAction;
